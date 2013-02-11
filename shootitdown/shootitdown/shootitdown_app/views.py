@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.http import HttpResponse
 
 from django.shortcuts import render_to_response
@@ -20,3 +21,14 @@ def latest(request):
                 idea_last_activity=idea_last_activity_form)
     idea.save()
     return render_to_response('base.html')
+=======
+def index(request):
+    
+    ideas = Models.Ideas.sort(recency)[0:4]
+    allcomments = []
+    for eachidea in ideas:
+        comments = Models.comments(eachidea.id)
+        allcomments = [allcomments,comments]
+
+    return rendertoresponse('/index.html',RequestContext='{ideas:ideas, allcomments:allcomments}')
+>>>>>>> 3eac54981b4d7145eaef8d2790a900b83e70f1dd
