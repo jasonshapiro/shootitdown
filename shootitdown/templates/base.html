@@ -7,12 +7,23 @@
 
 {% block scripts %}{% endblock %}
 {% block stylesheets %}{% endblock %}
+<link rel="stylesheet" type="text/css" href="/web/css/base.css"/>
 
 </head>
 
 <body>
 	
-	{% block content %}{% endblock %}
+	<div class="header"> 
 	
+		<div class="logodiv">
+			<a href="/index.html"><h1 class="logo"> Shoot it Down </h1></a>
+			<p> Tagline Placeholder </p>
+		</div>	
+		
+	</div>
+	
+	<div id="content">
+		{% block content %}{% endblock %}
+	</div>
 </body>
 </html>
