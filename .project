@@ -5,8 +5,20 @@
 	<projects>
 	</projects>
 	<buildSpec>
+<<<<<<< HEAD
 	</buildSpec>
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
+=======
+		<buildCommand>
+			<name>org.python.pydev.PyDevBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.projects.webnature</nature>
+		<nature>org.python.pydev.pythonNature</nature>
+>>>>>>> 27d0a99d32ceaaa6dadbd67bfbc79a16a52b8478
 	</natures>
 </projectDescription>
